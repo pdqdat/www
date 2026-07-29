@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 
 import { SOCIAL_LINKS } from "@/config/socials";
 import styles from "./SocialLinks.module.scss";
+import Magnetic from "@/components/ui/Magnetic";
 
 const SocialLinks = ({ delayStart = 0 }) => {
     return (
@@ -13,16 +14,18 @@ const SocialLinks = ({ delayStart = 0 }) => {
                     animate={{ scale: 1 }}
                     transition={{ type: "spring", stiffness: 260, damping: 20, delay: delayStart + (index * 0.1) }}
                 >
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                        transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                        style={{ display: "inline-block" }}
-                    >
-                        <a href={link.url} target="_blank" rel="noreferrer" style={{ display: "inline-block", width: "100%" }}>
-                            {link.name}
-                        </a>
-                    </motion.div>
+                    <Magnetic>
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                            style={{ display: "inline-block" }}
+                        >
+                            <a href={link.url} target="_blank" rel="noreferrer" style={{ display: "inline-block", width: "100%" }}>
+                                {link.name}
+                            </a>
+                        </motion.div>
+                    </Magnetic>
                 </motion.li>
             ))}
         </ul>
