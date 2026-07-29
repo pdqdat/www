@@ -29,6 +29,12 @@ body {
     color: var(--color-text);
 }
 
+@media (pointer: fine) {
+    body, a, button, input, textarea, select, [role='button'] {
+        cursor: none !important;
+    }
+}
+
 img {
     display: block;
     max-width: 100%;

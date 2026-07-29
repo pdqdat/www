@@ -1,0 +1,26 @@
+.cursorDot {
+    position: fixed;
+    top: -4px;
+    left: -4px;
+    background-color: var(--color-primary);
+    pointer-events: none;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+}
+
+.cursorRing {
+    position: fixed;
+    top: -16px;
+    left: -16px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9998;
+    box-sizing: border-box;
+    transform-origin: center;
+}
