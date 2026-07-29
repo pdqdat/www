@@ -8,6 +8,7 @@ import Layout from "@comp/Layout";
 const Home = lazy(() => import("@pages/Home"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
 const ContactPage = lazy(() => import("@/pages/ContactPage"));
+const NotFoundPage = lazy(() => import("@/pages/NotFoundPage"));
 const Test = lazy(() => import("@/components/Test"));
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
                 path: "/test",
                 element: <Test />,
             },
+            {
+                path: "*",
+                element: <NotFoundPage />,
+            }
         ],
     },
 ]);

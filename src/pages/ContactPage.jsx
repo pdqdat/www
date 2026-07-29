@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+
 import PageTitle from "@comp/PageTitle";
 import SocialLinks from "@comp/SocialLinks";
 import styles from "./ContactPage.module.scss";
@@ -6,7 +7,7 @@ import styles from "./ContactPage.module.scss";
 const ContactPage = () => {
     return (
         <div className={styles.container}>
-            <PageTitle title="Get in touch with Dat Phan" />
+            <PageTitle title="Get in touch with Dat Phan 👋" />
             
             <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}>
                 Get In Touch

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
+
 import styles from "./Footer.module.scss";
 
 const Footer = () => {

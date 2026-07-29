@@ -1,15 +1,15 @@
 export const SOCIAL_LINKS = [
     {
-        name: "Facebook",
-        url: "https://www.facebook.com/pdqdat/",
-    },
-    {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/pdqdat/",
     },
     {
         name: "Github",
         url: "https://github.com/pdqdat/",
+    },
+    {
+        name: "Facebook",
+        url: "https://www.facebook.com/pdqdat/",
     },
     {
         name: "Instagram",

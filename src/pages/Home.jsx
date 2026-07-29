@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import styles from "./Home.module.scss";
 import PageTitle from "@comp/PageTitle";
 import SocialLinks from "@comp/SocialLinks";
+
 const App = () => {
     return (
         <>

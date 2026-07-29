@@ -1,17 +1,13 @@
-// import styles from "./Button.module.scss";
-
-// const Button = ({ children }) => {
-//     return <button className={styles.btn}>{children}</button>;
-// };
-
-// export default Button;
 import { forwardRef } from "react";
+import { Slot } from "./Slot";
 import styles from "./Button.module.scss";
 
-const Button = forwardRef(({ className = "", variant = "default", size = "default", ...props }, ref) => {
-    const combinedClassName = [styles.button, styles[variant], styles[size], className].filter(Boolean).join(" ");
+const Button = forwardRef(({ className = "", variant = "default", size = "default", asChild = false, ...props }, ref) => {
+    const combinedClassName = [styles.button, styles[variant], styles[`size-${size}`], className].filter(Boolean).join(" ");
 
-    return <button className={combinedClassName} ref={ref} {...props} />;
+    const Comp = asChild ? Slot : "button";
+
+    return <Comp className={combinedClassName} ref={ref} {...props} />;
 });
 
 Button.displayName = "Button";
