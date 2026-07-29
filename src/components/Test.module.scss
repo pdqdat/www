@@ -1,0 +1,22 @@
+.test {
+    /* Testing your rem() function */
+    padding: rem(32);
+
+    /* Testing your em() function */
+    margin-bottom: em(24);
+
+    background: lightblue;
+
+    /* Testing breakpoint mixin */
+    @include breakpoint("medium") {
+        background: lightcoral;
+    }
+
+    /* Testing breakpoint-down mixin */
+    @include breakpoint-down("medium") {
+        border: 2px solid black;
+    }
+
+    /* Testing fluid typography mixin */
+    @include fs-fluid(20rem, 64rem, 1rem, 2rem);
+}

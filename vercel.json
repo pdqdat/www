@@ -10,6 +10,11 @@
             "source": "/gdhh",
             "destination": "https://youtube.com/playlist?list=PLJrg3cYXMbAqzJ2Nlp9HNaIIna7COVGj0&si=HOoTGIV2L7UKnwSn",
             "permanent": true
+        },
+        {
+            "source": "/threads",
+            "destination": "https://www.threads.com/@iamdatphan",
+            "permanent": true
         }
     ]
 }
