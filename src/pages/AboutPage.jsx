@@ -7,7 +7,8 @@ import styles from "./AboutPage.module.scss";
 const AboutPage = () => {
     return (
         <>
-            <PageTitle title="About Dat Phan" />
+            <PageTitle title="About Dat Phan 😎" />
+            
             <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}>
                 About Dat Phan
             </motion.h1>
