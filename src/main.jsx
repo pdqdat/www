@@ -7,6 +7,8 @@ import Layout from "@comp/Layout";
 
 const Home = lazy(() => import("@pages/Home"));
 const AboutPage = lazy(() => import("@/pages/AboutPage"));
+const ContactPage = lazy(() => import("@/pages/ContactPage"));
+const Test = lazy(() => import("@/components/Test"));
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
                 path: "/about",
                 element: <AboutPage />,
             },
+            {
+                path: "/contact",
+                element: <ContactPage />,
+            },
+            {
+                path: "/test",
+                element: <Test />,
+            },
         ],
     },
 ]);
@@ -27,5 +37,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
     <StrictMode>
         <RouterProvider router={router} />
-    </StrictMode>
+    </StrictMode>,
 );
