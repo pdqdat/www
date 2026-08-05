@@ -1,5 +1,6 @@
 import { forwardRef } from "react";
-import { Slot } from "./Slot";
+
+import { Slot } from "@ui/Slot";
 import styles from "./Button.module.scss";
 
 const Button = forwardRef(({ className = "", variant = "default", size = "default", asChild = false, ...props }, ref) => {

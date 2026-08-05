@@ -1,8 +1,8 @@
 import { motion } from "motion/react";
 
 import { SOCIAL_LINKS } from "@/config/socials";
+import Magnetic from "@ui/Magnetic";
 import styles from "./SocialLinks.module.scss";
-import Magnetic from "@/components/ui/Magnetic";
 
 const SocialLinks = ({ delayStart = 0 }) => {
     return (
@@ -21,7 +21,13 @@ const SocialLinks = ({ delayStart = 0 }) => {
                             transition={{ type: "spring", stiffness: 400, damping: 15 }}
                             style={{ display: "inline-block" }}
                         >
-                            <a href={link.url} target="_blank" rel="noreferrer" style={{ display: "inline-block", width: "100%" }}>
+                            <a 
+                                href={link.url} 
+                                target="_blank" 
+                                rel="noreferrer" 
+                                aria-label={link.name}
+                                className={styles.socialLink}
+                            >
                                 {link.name}
                             </a>
                         </motion.div>

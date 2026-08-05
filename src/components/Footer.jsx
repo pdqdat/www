@@ -15,7 +15,7 @@ const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
-            <nav className="wrapper">
+            <nav className="wrapper" aria-label="Footer Navigation">
                 <ul className={styles.footer__items}>
                     <li className={styles.footer__item}>
                         <NavLink to="/" className={getLinkClass}>
