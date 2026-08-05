@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Link } from "react-router";
 
 import PageTitle from "@comp/PageTitle";
-import Button from "@/components/ui/Button";
+import Button from "@ui/Button";
 
 const NotFoundPage = () => {
     return (

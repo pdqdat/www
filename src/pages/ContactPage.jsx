@@ -6,9 +6,12 @@ import styles from "./ContactPage.module.scss";
 
 const ContactPage = () => {
     return (
-        <div className={styles.container}>
-            <PageTitle title="Get in touch with Dat Phan 👋" />
-            
+        <section className={styles.contact}>
+            <PageTitle
+                title="Get in touch with Dat Phan 👋"
+                description="Get in touch with Dat Phan for collaboration, freelance work, or just to say hi!"
+            />
+
             <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}>
                 Get In Touch
             </motion.h1>
@@ -33,7 +36,7 @@ const ContactPage = () => {
             </motion.h3>
 
             <SocialLinks delayStart={0.9} />
-        </div>
+        </section>
     );
 };
 

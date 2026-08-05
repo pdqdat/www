@@ -1,6 +1,7 @@
-import Button from "@/components/ui/Button";
-import PageTitle from "@comp/PageTitle";
 import { motion } from "motion/react";
+
+import Button from "@ui/Button";
+import PageTitle from "@comp/PageTitle";
 
 const variants = ["default", "destructive", "outline", "secondary", "ghost", "link"];
 const sizes = ["default", "sm", "lg", "icon"];

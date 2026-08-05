@@ -42,8 +42,10 @@
             transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
         }
 
-        &:hover {
+        &:hover,
+        &:focus-visible {
             opacity: 1;
+            outline: none; // Using custom animated underline instead of default outline
             
             &::after {
                 transform: scaleX(1);

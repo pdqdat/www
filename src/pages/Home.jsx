@@ -1,14 +1,17 @@
 import { motion } from "motion/react";
 
-import styles from "./Home.module.scss";
 import PageTitle from "@comp/PageTitle";
 import SocialLinks from "@comp/SocialLinks";
-import DecodeText from "@/components/ui/DecodeText";
+import DecodeText from "@ui/DecodeText";
+import styles from "./Home.module.scss";
 
 const App = () => {
     return (
         <>
-            <PageTitle title="Dat Phan" />
+            <PageTitle
+                title="Dat Phan 😎"
+                description="Hello there! I'm Dat Phan, an IT student passionate about end-to-end development."
+            />
             <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}>
                 <DecodeText text="Dat Phan" />
             </motion.h1>

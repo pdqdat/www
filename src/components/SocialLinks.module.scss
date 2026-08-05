@@ -13,3 +13,17 @@
         text-align: left;
     }
 }
+
+.socialLink {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 2px 4px;
+    
+    &:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+    }
+}
