@@ -1,19 +1,49 @@
-# Dat Phan's Website
+# Dat Phan's Personal Website
+
+Personal website and portfolio for Dat Phan.
 
 ## Tech Stack
 
-- React
-- Vite
-- Sass
-- Framer Motion
+This project is built with a modern frontend stack:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **[React](https://react.dev/)** (v19) - UI library
+- **[React Router](https://reactrouter.com/)** (v7) - Client-side routing
+- **[Vite](https://vitejs.dev/)** (v6) - Build tool and development server. Configured with [SWC](https://swc.rs/) for blazing-fast Hot Module Replacement (HMR) and optimized builds.
+- **[Sass](https://sass-lang.com/)** - CSS extension language for styling. Configured to automatically inject global utility variables and mixins into all stylesheets.
+- **[Framer Motion](https://motion.dev/)** - Animation library
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `src/pages/` - Page components (`Home`, `AboutPage`, `ContactPage`, etc.)
+- `src/components/` - Reusable UI components and main layout
+- `src/scss/` - Global styles and Sass configuration
+- `src/assets/` - Static assets like images and fonts
+- `src/config/` - Configuration files
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm (or yarn/pnpm)
+
+### Installation
+
+1. Clone the repository and navigate to the project directory:
+
+    ```bash
+    git clone <repository-url>
+    cd www
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+### Scripts
+
+- **`npm run dev`**: Starts the development server with Hot Module Replacement (HMR) at `http://localhost:5173`.
+- **`npm run build`**: Builds the application for production. The output will be in the `dist/` directory.
+- **`npm run preview`**: Bootstraps a local static web server that serves the files from `dist/` for previewing the production build.
+- **`npm run lint`**: Runs ESLint to check for code quality and formatting issues.
